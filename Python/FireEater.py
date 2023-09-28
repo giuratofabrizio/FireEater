@@ -16,8 +16,8 @@ def send_message(msg):
         
 while True:
     humidity, temperature = Adafruit_DHT.read_retry(DHT_SENSOR, DHT_PIN)
-    
     temperature = round(temperature, 2)
+    
     if temperature < 24:
         verifica = True
 
